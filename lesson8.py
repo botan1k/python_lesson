@@ -10,7 +10,8 @@ with open('gitignore.txt', 'r') as l8:
     l8.seek(0)
     print(l8.readlines())
 
-with open('lesson8_file.txt', 'r+') as l8_2:
+with open('lesson8_file.txt', 'w') as l8_2:
     l8_2.writelines(q1)
-    l8_2.seek(0)
+
+with open('lesson8_file.txt', 'r') as l8_2:
     print(l8_2.readlines())
